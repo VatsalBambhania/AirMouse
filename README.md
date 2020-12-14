@@ -5,7 +5,9 @@ REQUIREMENTS:
    2) Dedicated GPU (Any model of gpu can work just fine, AMD or nvidia either is fine).
    
    Only if you want to run it inside Docker:
+  
    3) Docker ver 20.10.0 or above. 
+   
    4) Install nvidia-continer-toolkit (just run setupNvidiaToolkit.sh with root privilages if it is not installed).
 
 You need Just follow Steps given below to experience it yourself.
