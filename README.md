@@ -23,20 +23,30 @@ You need Just follow Steps given below to experience it yourself.
    
    3) Build image. 
        Command to build image is as below:
+       
        $ sudo docker build -t AirMouse
    
    4) Run command 
+   
       $ xhost + #Let container access display
        
    5) Run image using flags listed below
        Flags:
+       
        --gpus all #Let conatiner utilize GPU
+       
        -e DISPLAY=$DISPLAY  #environment variable
+       
        --env="QT_X11_NO_MITSHM=1" #environment variable
+       
        -v /tmp/.X11-unix:/tmp/.X11-unix #Let conatainer display Window
+       
        --device /dev/video0 # Let container use WebCam
+       
        --name AirMouse # Set Name of container
+       
       At last command looks like this
+      
        $ sudo docker run -ti \
        --gpus all \
        -e DISPLAY=$DISPLAY \
@@ -46,7 +56,7 @@ You need Just follow Steps given below to experience it yourself.
        --name AirMousee
        AirMouse
        
-      6) In terminal of container enter command given below to start using
+     6) In terminal of container enter command given below to start using
        $ bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_gpu_cust -calculator_graph_config_file=working_mouse.pbtxt
     
     
