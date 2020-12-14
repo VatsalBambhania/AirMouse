@@ -28,7 +28,7 @@ You need Just follow Steps given below to experience it yourself.
    4) Run command 
       $ xhost + #Let container access display
        
-   4) Run image using flags listed below
+   5) Run image using flags listed below
        Flags:
        --gpus all #Let conatiner utilize GPU
        -e DISPLAY=$DISPLAY  #environment variable
@@ -43,10 +43,10 @@ You need Just follow Steps given below to experience it yourself.
        --env="QT_X11_NO_MITSHM=1" \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        --device /dev/video0 \
-       --name AirMouse 
+       --name AirMousee
        AirMouse
        
-    5) In terminal of container enter command given below to start using
+      6) In terminal of container enter command given below to start using
        $ bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_gpu_cust -calculator_graph_config_file=working_mouse.pbtxt
     
     
