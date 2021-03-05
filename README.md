@@ -60,3 +60,9 @@ You need Just follow Steps given below to experience it yourself.
        $ bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_gpu_cust -calculator_graph_config_file=working_mouse.pbtxt
     
     
+=> In order to run stopped container, execute following 2 commands
+  $ xhost + (in your terminal)
+  $ sudo docker start CONTAINERNAME -i
+
+  Once you get the terminal of cotainer execute following command in it
+  $ bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_gpu_cust -calculator_graph_config_file=working_mouse.pbtxt
